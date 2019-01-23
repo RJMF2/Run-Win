@@ -1,0 +1,1982 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight:lighter;
+}
+/*
+div
+{
+    margin-bottom: 30px;
+}
+*/
+/*container=================*/
+.container 
+{
+    width: 1300px;
+    margin: auto;
+/*    border: 1px solid red;*/
+}
+@media(max-width:1350px)
+{
+    .container
+{
+    width: 1100px;
+}
+}
+@media(max-width:1150px)
+{
+    .container
+{
+    width: 900px;
+}   
+}
+@media(max-width:950px)
+{
+    .container
+{
+    width: 700px;
+}
+}
+@media(max-width:750px)
+{
+    .container
+{
+    width: 500px;
+}
+}
+@media(max-width:550px)
+{
+    .container
+{
+    width: 300px;
+}
+}
+@media(max-width:350px)
+{
+    .container
+    {
+        width: 99%;
+    }
+}
+/* this title to make all titles of the sections the same*/
+
+.title
+{
+    text-align: center;
+    margin-top: 90px;
+}
+.title h1
+{
+    color: #DA8080;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.title p
+{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333333;
+}
+.title.white h1 , .title.white p
+{
+    color: white;
+}
+
+/*end of container=========*/
+/*start of header*/
+.header
+{
+    background-image: url('../images/banner2.jpg');
+    min-height: 500px;
+    background-position: center top;
+    background-size: cover;
+}
+.header.home
+{
+    min-height: 750px;
+}
+/*navbar*/
+.header .navbar
+{
+    background-color: rgba(23, 23, 23,0.6);
+    max-height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+.header .navbar .container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header .navbar a
+{
+    text-decoration: none;
+    color: white;
+}
+.header .navbar a h2
+{
+    font-size: 36px;
+    text-transform: capitalize;
+    margin-left: 70px;
+    margin-top: 3px;
+    
+}
+.header .navbar ul
+{
+    list-style: none;
+    display: flex;
+    padding-top: 9px;
+    margin-right: 45px;
+    flex-wrap: wrap;
+}
+.header .navbar ul li a
+{
+    padding: 10px 16px 15px;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+}
+.header .navbar ul li a:hover
+{
+    background-color: white;
+    color: black;
+}
+/*to the page that i am standding thier*/
+.header .navbar ul li a.main
+{
+    background-color: white;
+    color: black;
+}
+[type="checkbox"]
+{
+    position: absolute;
+    left: -9999px;
+}
+/*end of navbar*/
+/*the bars that will be appeard */
+     @media(min-width:950px)
+{
+    lable.open
+{
+    display: none;
+}
+label.open i
+{
+    display:none;
+}
+
+}
+/*at middem screens we will make responsive navbar*/
+@media(max-width:950px)
+{
+    .header .navbar .container
+    {
+        display: block;
+    }
+    .header .navbar a h2
+    {
+        margin-left: 0;
+    }
+    lable.open
+{
+    z-index: 70;
+}
+label.open i
+{
+    border: 2px solid black;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    padding: 7px;
+    z-index: 80;
+    background-color: rgba(23, 23, 23,0.6);
+    color: white;
+    cursor: pointer;
+}
+    .header .navbar ul
+    {
+        display: block;
+        height: 0;
+        text-align: center;
+        transform: scaley(0);
+        transform-origin: top;
+        transition: transform 0.3s ease-in-out;
+        margin-top: -8px;
+        text-align: center;
+        margin-right: 0;
+    }
+    /*check box to make the responsive navbar*/
+[type="checkbox"]:not(:checked) + ul
+{
+    transform: scaley(1);
+}
+    .header .navbar ul li
+    {
+        width: 100%;
+        background-color: rgba(23, 23, 23,0.6);
+    }
+    .header .navbar a
+    {
+        display: inline-block;
+    }
+    .header .navbar ul li a
+    {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+/*=====================================================*/
+
+
+/*start of header title*/
+.header .container
+{
+    position: relative;
+}
+.header .slider
+{   
+    width: 420px;
+/*    height: 270px;*/
+    background-color: rgba(21, 20, 20,0.6);
+    border: 4px solid rgba(21, 20, 20,0.9);
+    position: absolute;
+    top: 280px;
+    right: 0px;
+    text-align: center;
+    padding:0 20px;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+}
+@media(max-width:750px)
+{
+    .header .slider
+    {
+        width: 100%;
+    }
+}
+.header .slider h1
+{
+    margin-top: 40px;
+    color: white;
+    text-transform: capitalize;
+    word-spacing: 9px;
+}
+.header .slider p
+{
+    color: white;
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 30px;
+    word-spacing: 3px;
+}
+.header .slider button
+{
+    margin-top: 20px;
+    padding: 11px 18px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.header .slider button:hover
+{
+    background-color: white;
+    color: #DE4E4E;
+}
+/*end of header title */
+
+/* end of header*/
+
+/*=============================================================*/
+
+
+/*start of our info===============*/
+.our-info
+{
+    min-height: 600px;
+}
+
+/*start of agents info*/
+.our-info .our-agent
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.our-info .our-agent .agent-info
+{
+    text-align: center;
+    width: 350px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+@media(max-width:750px)
+{
+    .our-info .our-agent .agent-info
+    {
+        margin-right: 0;
+    }
+}
+@media(max-width:350px)
+{
+    .our-info .our-agent .agent-info
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+/*has 3 divs inside to make a nice hover*/
+.our-info .our-agent .photo
+{
+    position: relative;
+    display: inline-block;
+}
+/*very last div that make background static*/
+.our-info .our-agent .photo .background
+{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    z-index: 1;
+}
+/*used to make the background white when hover and make the shadow static*/
+.our-info .our-agent .photo .blank
+{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    top: 14.5px;
+    left: 14.5px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(255,255,255,0.6);
+}
+/*from normal to be small and disappear hover*/
+.our-info .our-agent .photo .boxshadow
+{
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    z-index: 3;
+    position: absolute;
+    top: 14.5px;
+    left: 14.5px;
+    transition: all 0.5s ease-in-out;
+}
+.our-info .our-agent .photo:hover .boxshadow
+{
+    transform: scale(0);
+    opacity: 0;
+}
+/*used to use differnt images in boxshadow*/
+.our-info .our-agent .photo .image1
+{
+    background-image: url(../images/info-img1.jpg);
+    background-position: center;
+}
+.our-info .our-agent .photo .image2
+{
+    background-image: url(../images/info-img2.jpg);
+    background-position: center;
+}
+.our-info .our-agent .photo .image3
+{
+    background-image: url(../images/info-img3.jpg);
+    background-position: center;
+}
+/*invesible div when hove will come from big size to be normal*/
+.our-info .our-agent .photo .after-hover
+{
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    z-index: 4;
+    position: absolute;
+    top: 14.5px;
+    left: 14.5px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    transform: scale(1.6);
+    transition-delay: 0.1s;
+}
+.our-info .our-agent .photo .after-hover h2
+{
+    margin-top: 60px;
+    padding-bottom: 10px;
+    color: white;
+    border-bottom: 0.5px solid white;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.our-info .our-agent .photo .after-hover p
+{
+    margin-top: 10px;
+    color: white;
+    text-transform: capitalize;
+}
+.our-info .our-agent .photo:hover .after-hover
+{
+    opacity: 1;
+    transform: scale(1);
+}
+/*to use deffernt images*/
+.our-info .our-agent .photo .after-hover.img1
+{
+    background-image: url(../images/info-img1-1.jpg);
+}
+.our-info .our-agent .photo .after-hover.img2
+{
+    background-image: url(../images/info-img2-2.jpg);
+}
+.our-info .our-agent .photo .after-hover.img3
+{
+    background-image: url(../images/info-img3-3.jpg);
+}
+/*the title after evry agent*/ 
+.our-info .our-agent .agent-report
+{
+    margin-top: 20px;
+}
+.our-info .our-agent .agent-report h2
+{
+    text-transform: capitalize;
+    color: #DA8080;
+}
+.our-info .our-agent .agent-report p
+{
+    margin-top: 15px;
+    line-height: 30px;
+    color: #333333;
+}
+/*==========================================================*/
+
+
+/*our staff */
+
+.our-staff
+{
+    background-image: url(../images/staff.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 730px;
+    padding-top: 50px;
+    box-sizing: border-box; 
+}
+.our-staff .our-staff-say
+{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*every single section inside*/
+.our-staff .our-staff-say .staff
+{
+    width: 350px;
+    margin-right: 20px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    color: white;
+    background-color: rgba(43, 0, 24, 0.76);
+    min-height:360px;
+    transition: all 0.4s ease-in-out; 
+    margin-bottom: 30px;
+}
+@media(max-width:740px)
+{
+    .our-staff .our-staff-say .staff
+    {
+        margin-right: 0;
+    }
+}
+@media(max-width:350px)
+{
+    .our-staff .our-staff-say .staff
+    {
+        width: 100%;
+    }
+}
+/*when hover*/
+.our-staff .our-staff-say .staff:hover
+{
+    background-color: rgba(43, 0, 24, 0.92);
+}
+/* every section title photo and pargraph*/
+.our-staff .our-staff-say .staff .our-staff-title
+{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.our-staff .our-staff-say .staff .our-staff-title .image
+{
+    width: 110px;
+    height: 110px;
+    margin-right: 15px;
+}
+.our-staff .our-staff-say .staff .our-staff-title .image img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.our-staff .our-staff-say .staff .our-staff-title .staff-name
+{
+    margin-top: 25px;
+}
+.our-staff .our-staff-say .staff .our-staff-title .staff-name h3
+{
+    margin-bottom: 15px;
+    font-size: 21px;
+}
+.our-staff .our-staff-say .staff .our-staff-title .staff-name h4
+{
+    font-size: 18px;
+}
+.our-staff .our-staff-say .staff .about-staff
+{
+    
+}
+.our-staff .our-staff-say .staff .about-staff p
+{
+    line-height: 35px;
+    font-size: 17px;
+}
+/*=======================================================================*/
+
+
+
+/*=================our customers================*/
+.customers
+{
+    min-height: 480px;
+/*    border: 1px solid red;*/
+}
+.customers .our-customers
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.customers .our-customers .customer
+{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+@media(max-width:750px)
+{
+    .customers .our-customers .customer
+    {
+        margin-right: 0;
+    }
+}
+@media(max-width:350px)
+{
+    .customers .our-customers .customer
+    {
+        width: 100%;
+    }
+}
+/*the image of customer*/
+.customers .our-customers .customer .image
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+/*    margin: auto;*/
+}
+@media(max-width:550px)
+{
+    .customers .our-customers .customer .image
+    {
+        margin: auto;
+        text-align: center;
+    }
+}
+.customers .our-customers .customer .image img
+{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+}
+/*pragraph about customer*/
+.customers .our-customers .customer .about-customer
+{
+    width: 240px;
+}
+@media(max-width:550px)
+{
+    .customers .our-customers .customer .about-customer
+    {
+        margin: auto;
+        text-align: center;
+    }
+}
+.customers .our-customers .customer .about-customer h3
+{
+    color: #DA8080;
+    margin-top: 10px;
+    font-size: 25px;
+}
+.customers .our-customers .customer .about-customer h4
+{
+    color: #333;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.customers .our-customers .customer .about-customer p
+{
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 28px;
+    font-size: 17px;
+}
+.customers .our-customers .customer .about-customer i
+{
+    margin-right: 10px;
+    font-size: 20px;
+    color: #333;
+}
+.customers .our-customers .customer .about-customer span
+{
+    color:#333;
+}
+/*end of customers
+
+/*=============================================================*/
+
+
+
+/*==========start of latest trends=======*/
+.latest-trends
+{
+    background-image: url(../images/trend.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+/*end of title of trends==============*/
+
+
+/*start of trends and images=========*/
+
+.latest-trends .trends
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 520px;
+    margin-top: 60px;
+}
+/*this is the 4 sections inside*/
+.latest-trends .trends .trend
+{
+    width: 270px;
+    height: 450px;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+@media(max-width:550px)
+{
+    .latest-trends .trends .trend
+    {
+        text-align: center;
+        margin-right: 0;
+    }
+}
+@media(max-width:280px)
+{
+    .latest-trends .trends .trend
+    {
+        width: 100%;
+    }
+}
+.latest-trends .trends .trend .image
+{
+    width :100%;
+    height:270px;
+    z-index: 1;
+    background-color: white;
+    overflow: hidden;
+}
+.latest-trends .trends .trend .image img
+{
+    width: 100%;
+    height: 100%;
+     transition: all 0.4s ease-in-out;
+}
+/*this above image section is hidden when hover it appears with evry thing inside it*/
+.latest-trends .trends .trend .above-image
+{
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(77,44,35,0.5);
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.1s ease-in-out; 
+}
+@media(max-width:280px)
+{
+    .latest-trends .trends .trend .above-image
+    {
+        width: 100%;
+    }
+}
+.latest-trends .trends .trend .image:hover .above-image
+{
+    transition-delay: 0.3s;
+    opacity: 1;
+}
+.latest-trends .trends .trend .above-image h2
+{
+    background-color: black;
+    text-align: center;
+/*    height: 50px;*/
+/*    position: absolute;*/
+/*    left:0;*/
+/*    top:-50px;*/
+    margin:35px 0 25px;
+    padding: 9px 0;
+    transform: all 0.05s ease-in-out;
+    opacity: 0;
+}
+.latest-trends .trends .trend .image:hover .above-image h2
+{
+    transition-delay: 0.9s;
+    opacity: 1;
+}
+.latest-trends .trends .trend .above-image p
+{
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 25px;
+    transition-delay: 1s;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    opacity: 0;
+    width: 100%;
+    transition: all 0.1s ease-in-out;
+}
+.latest-trends .trends .trend .image:hover .above-image p
+{
+    transition-delay: 0.7s;
+    top: 100px;
+    opacity: 1;
+}
+.latest-trends .trends .trend .above-image a
+{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    top: 0px;
+    padding:  9px 0;
+    font-size: 22px;
+/*    margin-top: 15px;*/
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+}
+/*when hover on the image*/
+.latest-trends .trends .trend .image:hover .above-image a
+{
+    transition-delay: 0.5s;
+    top: 200px;
+    opacity: 1;
+}
+.latest-trends .trends .trend .image:hover img
+{
+    transform: scale(0) rotate(720deg);
+}
+/*the pargraph after image*/
+.latest-trends .trends .trend .about-trend
+{
+    text-align: center;
+    margin-top: 25px;
+}
+.latest-trends .trends .trend .about-trend h2
+{
+    margin-bottom:20px;
+}
+.latest-trends .trends .trend .about-trend p
+{
+    line-height: 30px;
+    font-size: 17px;
+}
+
+/*=================================================*/
+
+
+
+/*our portfolio*/
+
+
+.about-our-portfolio
+{
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+/*every single section*/
+.about-our-portfolio .right
+{
+    display: flex;
+    width: 650px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*the image in the section*/
+.about-our-portfolio .right .image
+{
+    position: relative;
+    overflow: hidden;
+    width: 285px;
+    height: 285px;
+    margin-right: 35px;
+    margin-bottom: 30px;
+}
+@media(max-width:550px)
+{
+    .about-our-portfolio .right .image
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+/*to make the width of the first two images wider*/
+.about-our-portfolio .right .image.width
+{
+    width: 600px;
+    height: 285px;
+    margin-bottom: 30px;
+}
+@media(max-width:750px)
+{
+    .about-our-portfolio .right .image.width
+    {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+.about-our-portfolio .right .image img
+{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+/*the upper div that comes when hover*/
+.about-our-portfolio .right .image .color
+{
+    background:linear-gradient(to bottom right, rgba(53, 68, 86,0.9),rgba(184, 93, 85,0.9));
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+.about-our-portfolio .right .image h2
+{
+    text-align: center;
+    position: absolute;
+/*    margin-top:40px;*/
+    font-size: 30px;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+    color: white
+}
+.about-our-portfolio .right .image .color p
+{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 93%;
+    border: 2px solid white;
+    box-sizing: border-box;
+    margin: auto;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+/*when hover on the image*/
+.about-our-portfolio .right .image:hover img
+{
+    transform: scale(1.4);
+/*    opacity: 0;*/
+}
+.about-our-portfolio .right .image:hover .color
+{
+    opacity: 1;
+}
+.about-our-portfolio .right .image:hover h2
+{
+    transform: scale(1.3);
+}
+.about-our-portfolio .right .image:hover .color p
+{
+    opacity: 1;
+    transform: translateY(110px);
+}
+
+
+
+
+
+/*=============================================================*/
+
+
+/*========footer========*/
+.footer
+{
+    background-image: url(../images/footer.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center bottom;
+}
+/*two lefted sections*/
+/*the very left section*/
+.footer .left-right
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 600px;
+}
+.footer .left
+{
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+@media(max-width:450px)
+{
+    .footer .left
+    {
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+.footer .left .our-links
+{
+    color: white;
+    width:calc( 325px - 40px);
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+@media(max-width:450px)
+{
+    .footer .left .our-links
+    {
+        margin-right: 0;
+        text-align: center;
+        width: 99%;
+    }
+}
+.footer .left .our-links h1
+{
+    padding-bottom: 50px;
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
+    font-size: 33px;
+}   
+.footer .left .our-links ul
+{
+    list-style: none;
+}
+.footer .left .our-links ul li
+{
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+.footer .left .our-links ul li i
+{
+    margin-right: 10px;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out
+}
+.footer .left .our-links ul li a
+{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease-in-out
+}
+/*hover for Quick Links*/
+.footer .left .our-links.hover ul li:hover a , .footer .left .our-links.hover ul li:hover i
+{
+    color: #F34A3F;
+}
+/*the third section from the left*/
+.footer .left .from-the-blog
+{
+    margin-bottom: 30px;
+}
+.footer .left-right .left .from-the-blog h2
+{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.footer .left-right .left .from-the-blog span
+{
+    margin-bottom: 20px;
+}
+.footer .left-right .left .from-the-blog p
+{
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 18px;
+}
+/*the forth section from the left*/
+.footer .left-right .left .keep-in-touch
+{
+    margin-bottom: 30px;
+}
+.footer .left-right .left .keep-in-touch input,
+.footer .left-right .left .keep-in-touch button
+{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid white;
+    font-size: 20px;
+    transition: all 0.4s ease-in-out;
+}
+.footer .left-right .left .keep-in-touch button:hover
+{
+    background-color: white;
+    color: #EA636D
+}
+/*icons colors for all icons in website*/
+.icons
+{
+    
+}
+.icons i
+{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: blue;
+    margin-right: 5px;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 22px;
+    box-sizing: border-box;
+    color: white;
+}
+/*color of all icons=========== */
+/*color of facebook icon*/
+.icons i.fa-facebook
+{
+    background-color: rgb(46, 46, 201);
+    transition: all 0.2s ease-in-out;
+}
+/*facbook icon when hover*/
+.icons i.fa-facebook:hover
+{
+    background-color: rgb(16, 16, 211);
+}
+/*color of twitter icon*/
+.icons i.fa-twitter
+{
+    background-color: #55acee;
+    transition: all 0.2s ease-in-out;
+}
+/*twitter icon when hover*/
+.icons i.fa-twitter:hover
+{
+    background-color: #0075ce;
+}
+/*color of linkedin icon*/
+.icons i.fa-linkedin
+{
+    background-color: #e68523;
+    transition: all 0.2s ease-in-out;
+}
+/*linkedin icon when hover*/
+.icons i.fa-linkedin:hover
+{
+    background-color: #bf6000;
+}
+/*color of google+ icon*/
+.icons i.fa-google-plus
+{
+    background-color: #dc4e41;
+    transition: all 0.2s ease-in-out;
+}
+/*google+ icon when hover*/
+.icons i.fa-google-plus:hover
+{
+    background-color: #ce1100;
+}
+
+/*=================================================*/
+
+
+/*=================================================*/
+
+
+
+
+
+
+
+/*=====================================================*/
+
+/*====================about us page====================*/
+/*first section*/
+
+.about-us
+{
+    min-height: 600px;
+/*    border: 1px solid red;*/
+    margin-bottom: 50px;
+}
+/*the border under title*/
+.border
+{
+    padding-bottom: 30px;
+    border-bottom: 2px solid #EEE;
+/*    width: 100%;*/
+}
+/*page name with home name*/
+.page
+{
+    margin-top: 30px;
+    height: 40px;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-top: 9px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.page span
+{
+    font-size: 19px;
+}
+/*home name*/
+.page .static-name
+{
+    color: #d19a9a;
+}
+/*page name*/
+.page .page-name
+{
+    color: #797779;
+}
+.about-us .more-about-us
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about-us .more-about-us .image
+{
+    width: 600px;
+/*    height: 380px;*/
+    margin-right: 30px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+/*scale hover for img*/
+.about-us .more-about-us .image:hover img
+{
+    transform: scale(1.5);
+}
+.about-us .more-about-us .image img
+{
+    width: 100%;
+/*    height: 100%;*/
+    transition: all 0.6s ease-in-out;
+    
+}
+.about-us .more-about-us .info-about-us
+{
+    width: 600px;
+    margin-bottom: 30px;
+}
+@media(max-width:1350px)
+{
+    .about-us .more-about-us .info-about-us
+    {
+        width: 500px;
+    }
+    .about-us .more-about-us .image
+    {
+        width: 500px;
+    }
+}
+@media(max-width:1150px)
+{
+    .about-us .more-about-us .info-about-us
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+    .about-us .more-about-us .image
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+.about-us .more-about-us .info-about-us h2
+{
+    color: #c77979;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.about-us .more-about-us .info-about-us p
+{
+    line-height: 37px;
+    font-size: 17px;
+}
+/*end of the div about us=================*/
+
+
+
+
+
+
+/*start of our team=================*/
+
+
+.our-team
+{
+    min-height: 800px;
+}
+.our-team .about-our-team
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+/*editing image and info about team members*/
+.our-team .about-our-team .team
+{
+    width: 350px;
+    height: 450px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-right:40px;
+    margin-bottom: 30px;
+}
+@media(max-width:550px)
+{
+    .our-team .about-our-team .team
+    {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+.our-team .about-our-team .team .image
+{
+    width: 340px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+/*    height: 210px;*/
+    overflow: hidden;
+/*    padding: 0px 5px;*/
+}
+@media(max-width:550px)
+{
+    .our-team .about-our-team .team .image
+    {
+        width: 98%;
+    }
+}
+.our-team .about-our-team .team .image img
+{
+/*    margin:0px 5px;*/
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+/*scale hover for the image*/
+.our-team .about-our-team .team .image:hover img
+{
+    transform: scale(1.4);
+}
+.our-team .about-our-team .team .team-info
+{
+    
+}
+.our-team .about-our-team .team .team-info h2
+{
+    color: #BF9090;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.our-team .about-our-team .team .team-info h3
+{
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+.our-team .about-our-team .team .team-info p
+{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/*========================================*/
+
+
+/*start of our customer of about page*/
+
+.about-customer
+{
+    min-height: 330px;
+/*    border: 1px solid red;*/
+}
+.about-customer .about-our-customer
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #EEE;
+/*    padding-bottom: 10px;*/
+    margin-top: 30px;
+    box-sizing: border-box;
+    
+}
+/*editing customer image*/
+.about-customer .about-our-customer .image
+{
+    width: 190px;
+    height: 110px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.about-customer .about-our-customer .image img
+{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+@media(max-width:550px)
+{
+    .about-customer .about-our-customer .image
+    {
+        margin-right: 0;
+    }
+}
+/*scale hover*/
+.about-customer .about-our-customer .image:hover img
+{
+    transform: scale(1.4);
+}
+/*end of customer=================*/
+
+
+
+/*end of about page===================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================================================*/
+
+
+/*start of sevices page*/
+/*start of sevices*/
+.services .image
+{
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+.services .image img
+{
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+}
+/*hover for image*/
+.services .image:hover img
+{
+    transform: scale(1.4);
+}
+/*end of services======*/
+
+/*start of services panels*/
+.services-panels .panels
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*every panel */
+.services-panels .panels .panel
+{
+/*    margin-right: 30px;*/
+    border: 1px solid #CCC;
+    width: 280px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 40px 35px 40px 0px;
+}
+/* header of panels*/
+.services-panels .panels .panel .panel-header
+{
+    background-color: #F5F5F5;
+    text-align: center;
+    border-bottom: 1px solid #CCC;
+    height: 110px;
+}
+/*icons of the panels*/
+.services-panels .panels .panel .panel-header i
+{
+    width: 90px;
+    height: 90px;
+    padding-top:25px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #CC5A5A;
+    font-size: 35px;
+    margin-top: 10px;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    border: 2px solid #D3D2D2;
+} /*hover for the icons in the heder of the panels*/
+.services-panels .panels .panel .panel-header i:hover
+{
+    background-color: #561C1C;
+}
+/*foote of the panel*/
+.services-panels .panels .panel .about-panel h1
+{
+    font-size: 26px;
+    margin-top: -60px;
+    margin-bottom:-10px;
+}
+.services-panels .panels .panel .about-panel p
+{
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.services-panels .panels .panel .about-panel button
+{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #CC5A5A;
+    color: white;
+    margin-bottom: 30px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+/*panel botton hover*/
+.services-panels .panels .panel .about-panel button:hover
+{
+    background-color: #561C1C;
+}
+
+
+
+/*================================================*/
+
+
+
+/*start of services tabs*/
+.services-tabs
+{
+    margin-bottom: 100px;
+}
+.services-tabs .tabs
+{
+    margin-top: 100px;
+}
+.services-tabs .tabs ul
+{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    z-index: 3;
+}
+.services-tabs .tabs ul li
+{
+    width: 24.8%;
+}
+.services-tabs .tabs ul li button
+{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    font-size: 24px;
+    color: #AD5050;
+    transition: all 0.4s ease-in-out;
+    border: none;
+    border-radius: 5px;
+}
+
+.services-tabs .tabs ul li button.hover
+{
+/*    background-color: #AD5050;*/
+    color: #B1002F;
+    border: 1px solid #CCC;
+    border-bottom: 1px solid white;
+    box-sizing: content-box;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.services-tabs .tabs ul li button:hover
+{
+    color: white;
+    background-color:#AD5050; 
+    border: 1px solid #CCC;
+}
+.services-tabs .tabs ul li button i
+{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.services-tabs .tabs .about-service
+{
+    border: 1px solid #CCC;
+    margin-top: -1px;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+.services-tabs .tabs .about-service h1
+{
+    color: #BF9092;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.services-tabs .tabs .about-service img
+{
+    width: 250px;
+/*    height: 150px;*/
+    margin-bottom: 20px;
+}
+.services-tabs .tabs .about-service p
+{
+    margin-bottom: 30px;
+    line-height: 35px;
+    font-size: 19px;
+    word-spacing: 3px;
+}
+/*responsive about us*/
+@media(max-width:950px)
+{
+    .services-tabs .tabs ul
+    {
+        flex-wrap: wrap;
+    }
+    .services-tabs .tabs ul li 
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .services-tabs .tabs ul li button.hover
+    {
+        border-bottom: 1px solid #CCC;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+@media(max-width:550px)
+{
+    .services-tabs .tabs .about-service img
+    {
+        width: 100%;
+    }
+    .services-tabs .tabs .about-service
+    {
+        padding-left: 0px;
+        text-align: center;
+    }
+    .services-panels .panels .panel
+    {
+        margin-right: 0;
+    }
+}
+
+
+/*========================================================*/
+
+
+/*===========end of services===================*/
+
+
+
+/*=====start of contact us===========================*/
+
+
+.contact-us .about-contact-us
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*the left section*/
+.left.veryleft
+{
+    width: 870px;
+}
+.contact-us .left iframe
+{
+    width: 100%;
+    height: 400px;
+}
+.contact-us .left form
+{
+    margin: 40px 0;
+}
+.contact-us .left form lable
+{
+    display: block;
+}
+.contact-us .left form input
+{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #767474;
+    border-radius: 3px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: black;
+    margin: 15px 0;
+}
+.contact-us .left form textarea
+{
+    display: block;
+    resize: none;
+    width: 100%;
+    height: 150px;
+    padding: 5px 0 0 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #767474;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+ .contact-us .left form button
+{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #CC5A5A;
+    color: white;
+    margin-bottom: 30px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.contact-us .left form button:hover
+{
+      background-color: #561C1C;
+}
+
+.right.veryright
+{
+    width: 400px;
+    margin-bottom: 40px;
+}
+.contact-us .right h1
+{
+    color: #DA8080;
+    margin-bottom: 20px;
+}
+.contact-us .right span
+{
+    display: block;
+    margin-bottom: 15px;
+}
+.contact-us .right span a
+{
+    text-decoration: none;
+    margin-left: 5px;
+    color: #747AB7;
+}
+.contact-us .right span a:hover
+{
+    text-decoration: underline;
+}
+.contact-us .right span i
+{
+    margin-right: 5px;
+}
+
+/*responsive contact us*/
+@media(min-width:1150px) and (max-width:1350px)
+{
+    .left.veryleft
+    {
+        width: 670px;
+    }
+}
+@media(min-width:950px) and (max-width:1150px)
+{
+    .left.veryleft
+    {
+        width: 470px;
+    }
+}
+
+
+
+/*********************************************/
+
+/*============end of contact==================*/
+
+
+
+/*=================start of blog======================*/
+
+
+
+.blog
+{
+    margin-bottom: 30px;
+}
+.blog .container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #CCC;
+}
+@media(max-width:950px)
+{
+    .blog .container
+    {
+        justify-content: center;
+    }
+}
+/*start of post */
+.blog .left .post
+{
+    margin-bottom: 50px;
+    border-bottom: 1px solid #CCC;
+    margin-top: 30px;
+}
+/*the adress*/
+.blog .left .post .adress a
+{
+    font-size: 30px;
+    text-decoration: none;
+    color: #BF9090;
+}
+.blog .left .post .adress p
+{
+    margin: 15px 0  ;
+    font-size: 20px;
+}
+.blog .left .post .adress p span
+{
+    color: #D48092;
+}
+.blog .left .post .adress span i
+{
+    margin-right: 5px;
+}
+/*the image*/
+.blog .left .post .image
+{
+    margin-top: 50px;
+    border-top: 1px solid #CCC;
+    padding: 17px 0; 
+    border-bottom: 1px solid #CCC;
+}
+.blog .left .post .image .scale
+{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+.blog .left .post .image img
+{
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.blog .left .post .image img:hover
+{
+    transform: scale(1.4);
+}
+.blog .left .post .about-image
+{
+    margin-top: 30px;
+}
+.blog .left .post .about-image p
+{
+    font-size: 18px;
+    word-spacing: 7px;
+    line-height: 30px;
+}
+.blog .left .post .about-image button
+{
+
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #CC5A5A;
+    color: white;
+    margin-bottom: 30px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    margin-top: 20px;
+}
+/*panel botton hover*/
+.blog .left .post .about-image button:hover
+{
+    background-color: #561C1C;
+}
+.blog .left .post .about-image button i
+{
+    margin-left: 10px;  
+}
+/*start the right section*/
+.blog .right
+{
+    text-align: center;
+    margin-top: 30px;
+/*    background-color: aqua;*/
+}
+.blog .right .search
+{
+    margin-bottom: 40px;
+}
+.blog .right .search h2
+{
+    color: #a04662;
+    margin-bottom: 20px;
+}
+.blog .right .search input
+{
+    width: 200px;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid #222;
+}
+.blog .right .search button
+{
+    box-sizing: border-box;
+    height: 30px;
+    width: 30px;
+    border: none;
+    margin-left: -35px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.blog .right .blog-categories
+{
+    margin-bottom: 60px;
+}
+.blog .right .blog-categories h2
+{
+    margin-bottom: 20px;    
+    color: #a04662;
+}
+.blog .right .blog-categories a
+{
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    color: #955d5d;
+    transition: all 0.2s ease-in-out;
+}
+.blog .right .blog-categories a:hover
+{
+    color: #ba4859;
+}
+.blog .right .side h2
+{
+    margin-bottom: 20px;
+    color: #a04662;
+}
+.blog .right .side p
+{
+    line-height: 30px;
+    word-spacing: 2px;
+}
+.left .buttons
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left .buttons button
+{
+     padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #CC5A5A;
+    color: white;
+    margin-bottom: 30px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.left .buttons button:hover
+{
+    background-color: #561C1C;
+}
